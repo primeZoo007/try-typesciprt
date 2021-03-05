@@ -36,6 +36,7 @@ class gameControl{
                 break;
             case 40://下
                  Y+=10
+                 console.log(Y)
                 break;
             case 37://zuo
                  X-=10
@@ -48,6 +49,7 @@ class gameControl{
         try{
             this.snake.X = X
             this.snake.Y = Y
+            console.log(this.snake.Y , Y)
         }catch(e){
             alert(e.message)
         }

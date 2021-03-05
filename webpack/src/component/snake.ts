@@ -15,6 +15,7 @@ class Snake {
     }
 
     set X(value){
+        console.log(value)
         if(this.X === value)return
         if(this.X<0||this.X>290){
             throw Error('good game')
@@ -26,9 +27,9 @@ class Snake {
                 value = this.X+10
             }
         }
-        this.moveBody()
         this.head.style.left = value + 'px'
         this.checkHeadBody()
+        this.moveBody()
     }
 
     set Y(value){
@@ -44,8 +45,9 @@ class Snake {
             }
         }
         this.head.style.top = value + 'px'
-        this.moveBody()
         this.checkHeadBody()
+        this.moveBody()
+
     }
     //
     addBody(){
