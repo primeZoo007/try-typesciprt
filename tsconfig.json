@@ -1,0 +1,22 @@
+{
+  "include": [
+    "./demo"
+  ],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES2015",
+//    "lib": [] // 项目中要使用的库
+    "outDir": "./dist",
+//    "outFile": "./dist/app.js"
+    "allowJs": true,
+    "checkJs": true,
+    "removeComments":  false, //是否移除注释
+    "noEmit":  false, //不生成编译后的文件
+    "noEmitOnError":  false ,// 当有错误的时候不生成文件
+    "alwaysStrict": true,
+    "noImplicitAny": true ,// 设置为any
+    "noImplicitThis": true, // 不允许不明确类型的this
+    "strictNullChecks": true,
+    "strict": false // 严格检查的总开关
+  }
+}
